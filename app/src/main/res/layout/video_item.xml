@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <data>
+            <variable
+                name="data"
+                type="hector.contreras.com.mexflikz.data.models.MediaInfo" />
+            <variable
+                name="imageSize"
+                type="String" />
+        </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/cardElevation"
+        app:cardCornerRadius="@dimen/cardRadius"
+        app:cardBackgroundColor="#ebebeb"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="-4dp"
+        tools:layout_height="300dp"
+        tools:layout_width="200dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:imageSize="@{imageSize}"
+            app:loadImage="@{data.getPosterPath}"
+            tools:src="@drawable/mock" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="@dimen/cardElevation"
+            android:text="" />
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

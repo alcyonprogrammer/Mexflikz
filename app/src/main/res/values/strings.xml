@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MexFlikz</string>
+    <string name="peliculas">Películas</string>
+    <string name="series">Series</string>
+    <string name="title_movies">Movies</string>
+    <string name="title_series">Series</string>
+    <string name="title_search">Search</string>
+</resources>
